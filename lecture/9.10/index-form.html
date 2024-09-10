@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <h1>Google search</h1>
+            <!-- action是link到另一个existing form -->
+            <form action="https://www.google.com/search">
+                <!-- name就是输进去的问题是什么的那个title -->
+                <input type="text" name="q">
+                <input type="submit">
+            </form>
+
+        <h1>Our custom form</h1>
+            <!-- POST 不再url上显示anser -->
+            <form method="POST"
+                action="http://cs-webapps.bu.edu/cgi-bin/util/formmailer.py">
+                favorite color: <input type="text" name="favorite_color"><br>
+                <br>
+                <!-- radio buttons are mutually exclusive
+                 same name for each -->
+                Mode of transporation: <br>
+                walk: <input type="radio" name="transporation" value="walk"><br>
+                scooter: <input type="radio" name="transporation" value="scooter"><br>
+                bike: <input type="radio" name="transporation" value="bike"><br>
+                bus: <input type="radio" name="transporation" value="bus"><br>
+                train: <input type="radio" name="transporation" value="train"> <br>
+
+                <br>
+                <!-- check box (select all)
+                 different name-->
+                Mode of transporation: <br>
+                (select all apply)<br>
+                walking shoes: <input type="checkbox" name="walking-shoes" value="walking shoes"><br>
+                scooter: <input type="checkbox" name="scooter" value="scooter"><br>
+                bike: <input type="checkbox" name="bike" value="bike"><br>
+                bus: <input type="checkbox" name="bus" value="bus"><br>
+                train: <input type="checkbox" name="train" value="train"> <br>
+                
+                pleasr share any comments about your commute: <br>
+                <textarea name="comments" id="" rol="5" cols="40"></textarea><br>
+                <p></p>
+                
+                which state do you live in? <br>
+                <select name="state" id="">
+                    <option value="MA">MA</option>
+                    <option value="IN">Indiana</option>
+                    <option value="OH">OHio</option>
+                </select><br>
+                <!-- mailto: <input type="submit" name="mailto" ><br> -->
+                 <br>
+                mailto myself: <input type="hidden" name="mailto" value = "ccryscuim@bu.edu"><br>
+                <input type="submit">
+            </form>
+    </body>
+</html>

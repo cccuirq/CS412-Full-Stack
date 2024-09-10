@@ -55,7 +55,7 @@ table {
 .bio {
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     line-height: 1.8;
 }
 
@@ -64,16 +64,26 @@ table {
 .activities-table {
     text-align: center;
     width: 88%;
-    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 30px;
 }
 
 
 .infota{
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.infota:hover {
+    transform: scale(1.05);
+}
+
+.infota th {
+    padding: 15px;
+    vertical-align: middle;
 }
 
 .infota p{
@@ -88,7 +98,7 @@ table {
 }
 
 .activities-table img {
-    margin: 20px auto;
+    margin: 20px;
     border-radius: 10px;
 }
 

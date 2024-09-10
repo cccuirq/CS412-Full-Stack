@@ -1,0 +1,21 @@
+HTTP methods
+    GET: request to get data from server
+    POST: request to send data to server
+
+    HEAD: retrieve metadata (headers) without downloading content
+    PUT: create resource on the server
+    DELETE: delete resource on server
+
+HTTP status code
+    200 - worked
+    301 - moved permanently
+    302 303 307 - moved temporary
+    304 - bad request
+    401 - unauthorized
+    401 - forbiden
+    404 - not found
+    500 - server error
+
+HTTP form
+    1. http GET a request to a form; display in browser
+    2. http POST to submit/process a form
